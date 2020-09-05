@@ -14,7 +14,7 @@ fi
 
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_DISABLE_COMPFIX="true"
-export ZSH_THEME="hcompact"
+export ZSH_THEME="handroid"
 
 # Plugins
 plugins=(git zsh-syntax-highlighting safe-paste github vi-mode zsh-autosuggestions)
@@ -31,6 +31,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 # # for Ubuntu 12.04, Fedora 21, and MacOSX 10.9 users)
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+bindkey 'Esc' autosuggest-accept
 # Use vi keybindings
 bindkey -v
 source $ZSH/oh-my-zsh.sh
@@ -58,4 +59,8 @@ function pkgr {
 function gup {
     cd ~/termux-scripts
     git pull origin master
+}
+
+function juliaprep {
+    pkgi openssl ess libutf8proc2 libunwind8 libssh2 pcre2 
 }

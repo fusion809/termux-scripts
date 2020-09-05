@@ -59,7 +59,7 @@ function pkgr {
 function gup {
     cd ~/termux-scripts
     git pull origin master
-}00
+}
 
 function pull {
     git pull origin $(git rev-parse --abbrev-ref HEAD)

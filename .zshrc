@@ -2,9 +2,9 @@ function ohmup {
     git clone https://github.com/ohmyzsh/ohmyzsh ~/.oh-my-zsh
     cd ~
     git clone https://github.com/fusion809/zsh-theme
-    ln -sf $PWD/zsh-theme/* ~/.oh-my-zsh/themes/
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/
-    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/
+    ln -sf $PWD/zsh-theme/*/*.zsh-theme ~/.oh-my-zsh/themes/
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 }
 
 if ! [[ -d $HOME/.oh-my-zsh ]]; then

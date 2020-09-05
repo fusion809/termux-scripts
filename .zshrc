@@ -61,17 +61,6 @@ function gup {
     git pull origin master
 }
 
-function juliaprep {
-    pkgi openssl ess libutf8proc2 libunwind8 libssh2 pcre2 
-}
-
-function git-branch {
-	if ! [[ -n "$1" ]]: then
-		hub rev-parse --abbrev-ref HEAD
-	else
-		hub -C "$1" rev-parse --abbrev-ref HEAD
-	fi
-}
 function pull {
-    git pull origin $(git-branch)
+    git pull origin $(git rev-parse --abbrev-ref HEAD)
 }

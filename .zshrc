@@ -64,3 +64,9 @@ function gup {
 function pull {
     git pull origin $(git rev-parse --abbrev-ref HEAD)
 }
+
+function julin {
+    wget https://its-pointless.github.io/setup-pointless-repo.sh
+    bash setup-pointless-repo.sh
+    pkg install julia
+}

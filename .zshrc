@@ -70,3 +70,8 @@ function julin {
     bash setup-pointless-repo.sh
     pkg install julia
 }
+
+function quickjupup {
+	wget -c https://github.com/its-pointless/gcc_termux/blob/master/julia_1.5.1_aarch64.deb
+	dpkg -i julia_1.5.1_aarch64.deb
+}

@@ -75,3 +75,8 @@ function quickjupup {
 	wget -c https://github.com/its-pointless/gcc_termux/raw/master/julia_1.5.1_aarch64.deb
 	dpkg -i julia_1.5.1_aarch64.deb
 }
+
+function jullib {
+    wget -c https://github.com/its-pointless/gcc_termux/blob/master/libjulia.so.1.5
+    mv libjulia.so.1.5 ../../usr/opt/julia/lib/
+}

@@ -77,6 +77,6 @@ function quickjupup {
 }
 
 function jullib {
-    wget -c https://github.com/its-pointless/gcc_termux/blob/master/libjulia.so.1.5
+    wget -c https://github.com/its-pointless/gcc_termux/raw/master/libjulia.so.1.5
     mv libjulia.so.1.5 ../../usr/opt/julia/lib/
 }

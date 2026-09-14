@@ -14,7 +14,7 @@ fi
 
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_DISABLE_COMPFIX="true"
-export ZSH_THEME="handroid"
+export ZSH_THEME="hnixos"
 
 # Plugins
 plugins=(git zsh-syntax-highlighting safe-paste github vi-mode zsh-autosuggestions)
